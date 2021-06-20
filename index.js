@@ -7,18 +7,6 @@ const fs = require("fs");
 
 ///////////
 
-const Topgg = require('@top-gg/sdk')
-
-const api = new Topgg.Api('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijc2MjE1Njc3NTcxNjk0NTk4MyIsImJvdCI6dHJ1ZSwiaWF0IjoxNjI0MTg5NDYxfQ.Tv4XYc8Mo9GdUcK1WqaBQ7JJJkByuX_fV-t6rtUsc-s')
-
-setInterval(() => {
-  api.postStats({
-    serverCount: client.guilds.cache.size,
-    shardId: client.shard.ids[0], // if you're sharding
-    shardCount: client.options.shardCount
-  })
-}, 1800000) 
-
 ///////////
 const ascii = require("ascii-table");
 const Keyv = require("keyv");
